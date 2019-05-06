@@ -1,17 +1,20 @@
 var path = require('path')
 var webpack = require('webpack')
 
-const NODE_ENV = process.env.NODE_ENV;
-console.log("-----NODE_ENV===",NODE_ENV);
-
-module.exports = {
-  // 根据不同的执行环境配置不同的入口
-  entry: NODE_ENV == 'development' ? './src/main.js' : './src/myPlugin/scrollAd/index.js',
+const NODE_ENV = process.env.NODE_ENV
+module.exports = {  
+  // entry: './src/main.js',
+  // output: {
+  //   path: path.resolve(__dirname, './dist'),
+  //   publicPath: '/dist/',
+  //   filename: 'build.js'
+  // },
+  entry: NODE_ENV == 'development' ? './src/main.js' : './src/myPlugin/index.js',
   output: {
     path: path.resolve(__dirname, './dist'),
     publicPath: '/dist/',
-    filename: 'index.js',
-    library: 'scrollAd',
+    filename: 'vueScrollAd.js',
+    library: 'vueScrollAd',
     libraryTarget: 'umd',
     umdNamedDefine: true
   },

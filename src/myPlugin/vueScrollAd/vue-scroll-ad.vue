@@ -38,7 +38,7 @@
 </template>
 <script>
 export default {
-    name: 'scrollAd',
+    name: 'vue-scroll-ad',
     props:{
         dataList:{
             default: ()=>[]

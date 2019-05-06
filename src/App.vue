@@ -20,7 +20,7 @@
     </div>
 </template>
 <script>
-import ScrollShow from '../src/myPlugin/scrollAd/scroll-ad';
+import ScrollShow from '../src/myPlugin/vueScrollAd/vue-scroll-ad';
 
 export default {
     components:{
@@ -63,6 +63,10 @@ export default {
                 { content: "广告内容6", link: "https://www.baidu.com" }
             ],
         }
+    },
+    created(){
+        console.log('出来了');
+        
     }
     
 }
