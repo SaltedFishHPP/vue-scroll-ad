@@ -2,22 +2,22 @@ var path = require('path')
 var webpack = require('webpack')
 const NODE_ENV = process.env.NODE_ENV
 module.exports = {  
-  entry: './src/main.js',
-  output: {
-    path: path.resolve(__dirname, './dist'),
-    publicPath: '/dist/',
-    filename: 'build.js'
-  },
-  // npm 发布
-  // entry: NODE_ENV == 'development' ? './src/main.js' : './src/myPlugin/index.js',
+  // entry: './src/main.js',
   // output: {
   //   path: path.resolve(__dirname, './dist'),
   //   publicPath: '/dist/',
-  //   filename: 'vue-scroll-ad.js',
-  //   library: 'vue-scroll-ad',
-  //   libraryTarget: 'umd',
-  //   umdNamedDefine: true
+  //   filename: 'build.js'
   // },
+  // npm 发布
+  entry: NODE_ENV == 'development' ? './src/main.js' : './src/myPlugin/index.js',
+  output: {
+    path: path.resolve(__dirname, './dist'),
+    publicPath: '/dist/',
+    filename: 'vue-scroll-ad.js',
+    library: 'vue-scroll-ad',
+    libraryTarget: 'umd',
+    umdNamedDefine: true
+  },
   module: {
     rules: [
       {
