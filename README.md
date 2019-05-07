@@ -1,10 +1,10 @@
 # vue-scroll-ad
 
-> A Vue.js project
+> Ad scrolling plugin for VUE 基于vue的广告滚动插件
 
-## Build Setup
+## Build Setup 使用步骤
 
-``` bash
+``` bash 安装
 # install dependencies
 npm install
 

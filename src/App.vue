@@ -20,7 +20,7 @@
     </div>
 </template>
 <script>
-import ScrollShow from '../src/myPlugin/vueScrollAd/vue-scroll-ad';
+import ScrollShow from './myPlugin/scroll/index.vue';
 
 export default {
     components:{
@@ -64,11 +64,6 @@ export default {
             ],
         }
     },
-    created(){
-        console.log('出来了');
-        
-    }
-    
 }
 </script>
 <style lang="less">

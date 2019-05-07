@@ -1,11 +1,11 @@
 {
   "name": "vue-scroll-ad",
   "description": "A Vue.js project",
-  "version": "1.0.3",
+  "version": "1.0.6",
   "author": "saltedfishhpp",
   "license": "MIT",
   "private": false,
-  "main": "dist/vueScrollAd.js",
+  "main": "dist/vue-scroll-ad.js",
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
