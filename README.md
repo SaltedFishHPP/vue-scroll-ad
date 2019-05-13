@@ -16,7 +16,7 @@ import scrollAd from 'vue-scroll-ad'
 Vue.use(scrollAd)
 
 html中
-<scroll-ad :dataList  | 数据  |="adList"></scroll-ad>
+<scroll-ad :dataList="adList"></scroll-ad>
 ```
 
 ##### 配置
@@ -94,7 +94,3 @@ adList2: [
 ],
 ```
 多列展示需要list数据中还有subList数据，默认的sub参数名为list，如果不一致，则需要传value-list=""进行自定义命名
- 
- 
-
-GitHub地址(https://github.com/SaltedFishHPP/vue-scroll-ad).
